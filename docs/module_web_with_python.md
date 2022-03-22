@@ -1016,7 +1016,6 @@ Your main python package directory does not get FLOODED with unnecessary python 
 
 
 #### What is a API?
-pincér :D 
 Az API (angol rövidítés eredete application programming interface)
 alatt egy olyan programozási interfészt, programozási felületet és
 annak részletes dokumentációját értjük, amelynek segítségével egy 

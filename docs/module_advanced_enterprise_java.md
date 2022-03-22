@@ -3,7 +3,12 @@
 ### Java Enterprise and Spring
 
 #### What are the possible uses of reflection?
+
 #### What is Spring?
+The Spring Framework (Spring) is an open-source application framework that provides infrastructure support for developing Java applications. One of the most popular Java Enterprise Edition (Java EE) frameworks, Spring helps developers create high performing applications using plain old Java objects.
+
+
+
 #### What is Spring Boot?
 #### What is the major difference between the Standard edition (JSE) and Enterprise edition (JEE)? You can choose Spring (Spring Boot) instead of JavaEE. Focus on comparing them.
 #### What are the advantages of the Spring Framework? Focus on the Core part.

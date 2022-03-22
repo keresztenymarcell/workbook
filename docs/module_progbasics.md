@@ -1,51 +1,52 @@
 
 
-
-Data structures
-What is the purpose of a list (array in some programming languages) data structure? Name some methods of it!
+#### Data structures
+## What is the purpose of a list (array in some programming languages) data structure? Name some methods of it!
 List is a container which can hold a fix number of items and these items should not be of the same type. Most of the data structures make use of list to implement their algorithms. Python has a set of built-in methods that you can use on lists/arrays.
-append(): Adds an element at the end of the list
-clear(): Removes all the elements from the list
-copy(): Returns a copy of the list
-count()	: Returns the number of elements with the specified value
-extend(): Add the elements of a list (or any iterable), to the end of the current list
-index(): Returns the index of the first element with the specified value
-insert(): Adds an element at the specified position
-pop(): Removes the element at the specified position
-remove(): Removes the first item with the specified value
-reverse(): Reverses the order of the list
-sort(): Sorts the liston has a set of built-in methods that you can use on lists/arrays.
+
+- append(): Adds an element at the end of the list
+- clear(): Removes all the elements from the list
+- copy(): Returns a copy of the list
+- count()	: Returns the number of elements with the specified value
+- extend(): Add the elements of a list (or any iterable), to the end of the current list
+- index(): Returns the index of the first element with the specified value
+- insert(): Adds an element at the specified position
+- pop(): Removes the element at the specified position
+- remove(): Removes the first item with the specified value
+- reverse(): Reverses the order of the list
+- sort(): Sorts the liston has a set of built-in methods that you can use on lists/arrays.
 
 
 
 
-What is the difference between a list/array and a set?
-Indexing - a list can be indexed by integer (starting from 0); a set cannot be indexed (there is no concept of the first item in a set except when it is iterated).
-Slicing - a list can be sliced (using [a:b] notation); a Python set cannot be sliced.
-Contents - a list can contain any mixture of data items; a set can only contain those data items which are hashable (i.e. the hash() function returns a value).
-Duplicates - a list can contain duplicate data items - there is no limit on how many times items of equal value appear in the list; a set cannot contain duplicates.
-Ordering - lists are ordered which means they retain ordering as determined by the program using the list; sets are not ordered - there is no concept of first, second etc - and there is no way that a programmer can control the order in which a set is iterated, displayed or otherwise presented. (Note ordering is not the same as being sorted - but sets can’t be sorted either).
+## What is the difference between a list/array and a set?
+- Indexing - a list can be indexed by integer (starting from 0); a set cannot be indexed (there is no concept of the first item in a set except when it is iterated).
+- Slicing - a list can be sliced (using [a:b] notation); a Python set cannot be sliced.
+- Contents - a list can contain any mixture of data items; a set can only contain those data items which are hashable (i.e. the hash() function returns a value).
+- Duplicates - a list can contain duplicate data items - there is no limit on how many times items of equal value appear in the list; a set cannot contain duplicates.
+- Ordering - lists are ordered which means they retain ordering as determined by the program using the list; sets are not ordered - there is no concept of first, second etc - and there is no way that a programmer can control the order in which a set is iterated, displayed or otherwise presented. (Note ordering is not the same as being sorted - but sets can’t be sorted either).
 membership - a membership test (the ‘in’ operator) on a list is a linear search from first to last ; a membership test on a set is based first on the hash() of the value being searched for. Searching a set is considerably more efficient when compared to a similar sized list.
-Other capabilities - lists don’t have behaviours for creating new lists based on overlaps or differences between lists; sets on the other hand have a myriad of operations (and methods) for identifying the differences and overlaps between sets
+- Other capabilities - lists don’t have behaviours for creating new lists based on overlaps or differences between lists; sets on the other hand have a myriad of operations (and methods) for identifying the differences and overlaps between sets
 
 
 
-What is the purpose and methods of a dictionary/map data structure?
+## What is the purpose and methods of a dictionary/map data structure?
 In Python is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key:value pair. Key value is provided in the dictionary to make it more optimize.
-clear(): Removes all the elements from the dictionary
-copy(): Returns a copy of the dictionary
-fromkeys(): Returns a dictionary with the specified keys and value
-get(): Returns the value of the specified key
-items(): Returns a list containing a tuple for each key value pair
-keys(): Returns a list containing the dictionary's keys
-pop(): Removes the element with the specified key
-popitem(): Removes the last inserted key-value pair
-setdefault(): Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
-update(): Updates the dictionary with the specified key-value pairs
-values(): Returns a list of all the values in the dictionary
+- clear(): Removes all the elements from the dictionary
+- copy(): Returns a copy of the dictionary
+- fromkeys(): Returns a dictionary with the specified keys and value
+- get(): Returns the value of the specified key
+- items(): Returns a list containing a tuple for each key value pair
+- keys(): Returns a list containing the dictionary's keys
+- pop(): Removes the element with the specified key
+- popitem(): Removes the last inserted key-value pair
+- setdefault(): Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+- update(): Updates the dictionary with the specified key-value pairs
+- values(): Returns a list of all the values in the dictionary
 
 Python’s map() is a built-in function that allows you to process and transform all the items in an iterable without using an explicit for loop, a technique commonly known as mapping. map() is useful when you need to apply a transformation function to each item in an iterable and transform them into a new iterable. map() is one of the tools that support a functional programming style in Python.
 map() loops over the items of an input iterable (or iterables) and returns an iterator that results from applying a transformation function to every item in the original input iterable.
+
 
 >>> def square(number):
 ...    return number ** 2
@@ -85,8 +86,8 @@ map() loops over the items of an input iterable (or iterables) and returns an it
 
 
 
-Algorithms
-Fibonacci sequences. Write a method (or pseudo code), that generates the Fibonacci sequences.
+### Algorithms
+## Fibonacci sequences. Write a method (or pseudo code), that generates the Fibonacci sequences.
 We can make a function call itself. This is known as recursion. A common example is a function which calculates numbers in the Fibonacci sequence: the zeroth number is 0, the first number is 1, and each subsequent number is the sum of the previous two numbers:
 
 Rekurzió: A fibonacci szekvencia egy rekurzív függvény, bármikor amikor rekurziós függvényt hívunk, hogy ha van benne egy olyan feltétel, ami megállítja a rekurziós folyamatot
