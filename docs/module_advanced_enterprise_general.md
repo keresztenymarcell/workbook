@@ -121,10 +121,48 @@ A Test Case is a set of actions executed to verify a particular feature or funct
 ### Software Methodologies
 
 #### What kind of software-lifecycle models do you know?
+- Waterfall Model.
+- V-Shaped Model.
+- Iterative Model.
+- Spiral Model.
+- Big Bang Model.
+- Agile Model.
 #### What is a UML diagram? What kind of diagram types do you know?
+UML is a standardized modeling language that can be used across different programming languages and development processes, so the majority of software developers will understand it and be able to apply it to their work.
+
+1. Structural Diagrams: 
+    - Class Diagram : Shows static structure of the classes including classes, their attributes and behaviour and relationships between them.
+    - Component Diagram: Breaks down the system into components, and visualizes the relationship between them.
+    - Deployment Diagrams: Show how software is deployed on hardware components in a system.
+    - Object Diagram: Shows examples of data structures in a specific time. You could use a class diagram to show a structure and then show an Object Diagram as test cases.
+    - Package Diagram: Shows dependencies between packages.
+2. Behavioral Diagrams:
+    - Use Case Diagram: Shows how users would interact with the system.
+    - Sequence Diagram: Shows the order in which objects interact. This way, you can visually represent simple runtime scenarios.
+    - Activity Diagram: Visualize the steps performed in a use case—the activities can be sequential, branched, or concurrent. 
+    - State Diagram: ...
+    - Communication Diagram: ...
+
 #### What is a UML class diagram? What are the typical elements?
+Shows static structure of the classes including classes, their attributes and behaviour and relationships between them.
+ - Rectangle: Represents a class, its attributes(with visibility) and behaviours.
+ - Arrow: Inharitance
+ - Black Diamond Arrow: Composition
+ - White Diamon Arrow: Aggregation
+ - Line: Association 
+
 #### What kind of design patterns do you know? Bring at least 3 examples.
-#### What is the purpose of the Iterator Pattern?
+1. Builder Pattern: 
+    - To create an object, you execute a series of these steps on a builder object. The important part is that you don’t need to call all of the steps. You can call only those steps that are necessary for producing a particular configuration of an object.
+2. Factory Pattern: 
+    - 
+
+3. Singleton Pattern: 
+    - Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+
+ #### What is the purpose of the Iterator Pattern?
+ In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
 #### What do you know about the SOLID principles?
 #### How would you separate data storage code and business logic code (which uses stored data) in an application?
 

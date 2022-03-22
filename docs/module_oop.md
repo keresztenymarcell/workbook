@@ -71,23 +71,25 @@
 
 #### What is the Big O time complexity of the common operations in an ArrayList, LinkedList, HashMap? And of a bubble sort, quicksort, finding items in a Binary Search tree?
 
-ArrayList:
+# ArrayList:
 - adding to the beginning (or near the beginning): the whole list needs to be "re-indexed": O(n)
 - adding to the end (or near to the end): O(1)
 - remove from the end: O(1)
 - remove from elsewhere: "re-indexing": O(n)
 - get (by index): O(1)
 - contains: O(n)
-LinkedList:
+
+# LinkedList:
 - adding to the beginning or end: O(1)
 - adding elsewhere (somewhere middle): O(n)
 - remove: O(n)
 - get: O(n)
 - contains: O(n)
-HashMap:
+
+# HashMap:
 - every task takes a single operation (except in edge cases, like hash clash).
-Bubble Sort: -needs a nested for loop: O(n^2)
-Quicksort:
+- Bubble Sort: -needs a nested for loop: O(n^2)
+- Quicksort:
 - on average: O(log n)
 - worst case: O(n^2)
 Binary Search Tree:
