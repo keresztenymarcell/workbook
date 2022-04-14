@@ -107,13 +107,29 @@ A Test Case is a set of actions executed to verify a particular feature or funct
 
 
 #### What are the unit testing best practices? (Eg. how many assertion should a test case contain?)
+
+
+
 #### What is arrange/act/assert pattern?
+
+1. Arrange 
+    - The steps to prepare the test case, for example: log in, create objects, connect database
+
+2. Act 
+    - On the target behaviour, a method call for example on the main thing to be tested
+
+3. Assert
+    - Expected outcomes, steps to verfy the goodness or the badness of the code. Sometimes as simple as checking numeric or string values.
+    - These steps will determine if a test will fail or not.
+
 
 ### DevOps
 
 #### What is continuous integration? Why is CI important?
 #### Why are tests important in the CI workflow?
 #### Name some software that help the CI workflow!
+Jenkins
+
 #### What is Continuous Delivery?
 #### What is Continuous Deployment?
 #### What is DevOps?
@@ -164,14 +180,34 @@ Shows static structure of the classes including classes, their attributes and be
  #### What is the purpose of the Iterator Pattern?
  In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
 #### What do you know about the SOLID principles?
+1. Single Responsibility 
+    - Every class, function, module should be responsible for one thing only.
+    - Smaller precices classes, methods
+    - Service classes
+2. Open/Closed Principle
+    - Open for extension / closed for modification
+    - Extends functionality
+3. Liskov Substituion
+    - You should be able to change the type of parent type to the subtype without breaking the code
+
+4. Interface Segregation Principle
+    - Clients should not be forced to implement interfaces they dont use.
+    - Instead of one fat interface, many smaller interfaces are preferred.
+
+5. Dependency Inversion Principle
+    -
+    
 #### How would you separate data storage code and business logic code (which uses stored data) in an application?
 
 ## Computer science
 
 ### Data Structures
 #### What is the difference between Stack and Queue data structure?
+
 #### What is a graph? What are simple graphs? What are directed graphs? What are weighted graphs?
 #### What are trees? What are binary trees? What are binary search trees?
+
+
 #### How can you store graphs in programs? What are the advantages/disadvantages per each?
 #### What are graph traversal algorithms? What is BFS, how does it work? What is DFS, how does it work?
 #### How does dictionary work?
@@ -191,6 +227,7 @@ he OAuth (open authorization) protocol was developed by the Internet Engineering
 #### What is Basic Authentication?
 HTTP Basic Authentication requires that the server request a user name and password from the web client and verify that the user name and password are valid by comparing them against a database of authorized users. In the HEADER.
 #### What is CORS, why it’s needed in browsers?
+
 
 
 #### How can you initialize a CSRF attack?

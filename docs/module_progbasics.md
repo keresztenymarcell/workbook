@@ -47,7 +47,7 @@ In Python is an unordered collection of data values, used to store data values l
 Python’s map() is a built-in function that allows you to process and transform all the items in an iterable without using an explicit for loop, a technique commonly known as mapping. map() is useful when you need to apply a transformation function to each item in an iterable and transform them into a new iterable. map() is one of the tools that support a functional programming style in Python.
 map() loops over the items of an input iterable (or iterables) and returns an iterator that results from applying a transformation function to every item in the original input iterable.
 
-
+```py
 >>> def square(number):
 ...    return number ** 2
 ...
@@ -83,7 +83,7 @@ map() loops over the items of an input iterable (or iterables) and returns an it
 >>> list(map(str.lower, string_it))
 ['processing', 'strings', 'with', 'map']
 
-
+```
 
 
 ### Algorithms

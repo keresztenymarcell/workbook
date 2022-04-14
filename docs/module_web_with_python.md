@@ -7,11 +7,14 @@ Mellékletek terület
 ### Clean code
 
 #### Point out 5 suggestions, how to format an SQL query!
-Indentation/Alignment, Spaces, Variable Naming Conventions (Letter-casing, Descriptive Names), 
-Write Useful Comments, Use the WITH Clause(WITH clause is basically a replacement for a normal subquery.)
+1. Indentation/Alignment, 
+2. Spaces
+3. Variable Naming Conventions (Letter-casing, Descriptive Names)
+4. Write Useful Comments
+5. Use the WITH Clause(WITH clause is basically a replacement for a normal subquery.)
 
 #### What layers can you name in a simple web application?
-Presentation layer (PL)
+1. Presentation layer (PL)
     PL displays the user interface and makes user interaction more straightforward. 
     The presentation layer has UI components that render and show data for users.
     There are also user process components that set the user interactions. 
@@ -19,16 +22,16 @@ Presentation layer (PL)
     of the Presentation layer is to get input data, process users’ requests, 
     send them to data service, and show the results.
 
-Data service layer (DSL)
+2. Data service layer (DSL)
     DSL transmits data processed by the Business logic layer to the Presentation layer. 
     This layer guarantees data security, isolating the business logic from the client side.
 
-Business logic layer (BLL)
+3. Business logic layer (BLL)
     BLL is responsible for the proper data exchange.
     This layer defines the logic for business operations and rules. 
     Logging in the website is an example of a business logic layer.
 
-Data access layer (DAL)
+4. Data access layer (DAL)
     DAL offers simplified access to data stored in persistent storages like 
     binary and XML files. Data access layer also manages CRUD operations — create, read, update, delete.
 
@@ -169,16 +172,16 @@ MD5, SHA2, CRC32
 ### Algorithms - logikát írja le
 
 #### What is the difference between Stack and Queue data structure?
-Difference Between Stack and Queue
-featuredStack and Queue both are the non-primitive data structures. 
-The main differences between stack and queue are that stack uses LIFO 
+#### Difference Between Stack and Queue
+Stack and Queue both are the non-primitive data structures. 
+- The main differences between stack and queue are that stack uses LIFO 
 (last in first out) method to access and add data elements whereas 
 Queue uses FIFO (First in first out) method to access and add data elements.
 
-Stack has only one end open for pushing and popping the data elements on
+- Stack has only one end open for pushing and popping the data elements on
 the other hand Queue has both ends open for enqueuing and dequeuing the data elements.
 
-Stack and queue are the data structures used for storing data elements and
+- Stack and queue are the data structures used for storing data elements and
 are actually based on some real world equivalent. For example, the stack is a
 stack of CD’s where you can take out and put in CD through the top of the stack 
 of CDs. Similarly, The queue is a queue for Theatre tickets where the person 
@@ -200,12 +203,13 @@ sum/length
 
 #### What is Big O complexity? Explain time and space complexity!
 Algoritmusok hatékonyságának a mérőszáma. 
-Time
+
+1. Time
 By definition, time complexity is the amount of time taken by an algorithm to run, as a function
 of the length of the input. Here, the length of input indicates the number of operations to be
 performed by the algorithm. This gives a clear indication of what exactly Time complexity tells us.
 
-Space
+2. Space
 The space complexity of an algorithm or a computer program is the amount of memory space required
 to solve an instance of the computational problem as a function of characteristics of the input. 
 It is the memory required by an algorithm until it executes completely.
@@ -229,7 +233,7 @@ allowing you to execute different code blocks based on different conditions.
 
 The switch has one or more case blocks and an optional default.
 
-
+```js
 const expr = 'Papayas';
 switch (expr) {
   case 'Oranges':
@@ -243,10 +247,11 @@ switch (expr) {
   default:
     console.log(`Sorry, we are out of ${expr}.`);
 }
-> "Mangoes and papayas are $2.79 a pound."
-> 
-> 
+// output: "Mangoes and papayas are $2.79 a pound."
+```
+
 #### How to achieve a switch-case-like structure in Python?
+```py
 def switch_demo(argument):
     switcher = {
         1: "January",
@@ -263,6 +268,9 @@ def switch_demo(argument):
         12: "December"
     }
     print switcher.get(argument, "Invalid month")
+
+```
+
 In the above example, when you pass an argument to the switch_demo function, it is 
 looked up against the switcher dictionary mapping. If a match is found, the associated 
 value is printed, else a default string (‘Invalid Month’) is printed. The default string 
@@ -277,22 +285,26 @@ LEGB
 a VAR deklaráció hatóköre (scope-ja) globális. Amennyiben függvényen belül használjuk, akkor lokális.
 Ez azt jelenti, ha függvényen kívül deklarálunk var kulcsszóval, akkor a teljes kódra érvényes változót kapunk.
 A scriptet az értelmező úgy futtatja, hogy a globális hatókörben talált deklarációt fölemeli a script tetejére.  - HOISTING
-VAR újradeklarálható.
 
-Let- NEM deklarálható újra
+- VAR újradeklarálható.
+
+- Let- NEM deklarálható újra
+
+```js
 let developer = "George";
 let developer = "Peter"; 
+```
 hibára fut!
 
 
-
+```js
 let message = "Everything is alright.";
 let eventCounter = 0;
 if (eventCounter < 1) {
     let message = "Nothing is wrong.";    console.log(message);
 }
 console.log(message);
-
+```
 -
 Nothing is wrong.
 Everything is alright.
@@ -301,7 +313,7 @@ A blokkon belül LET-tel deklarált változó a blokk futásának idejére elfed
 A blokk vége után visszaáll a blokk előtti helyzet.
 
 
-CONST
+- CONST
 A CONST kulcsszó szintén deklarációra használható. A vele létrehozott változó értéke nem változtatható,
 így helyesebb ha konstansnak nevezzük. Érvényességét tekintve a LET-re hasonlít legjobban,
 hiszen „block scope” érvényességű a létrehozott konstans. Amiben mégis különböző a LET-tel létrehozott változótól, 
@@ -309,32 +321,40 @@ hogy ebben az esetben a változó értéke sem írható fölül.
 
 
 #### How the list comprehension looks like in Python?
-PL. [expression for item in list]
-
+PL.
+```py
+[expression for item in list]
+```
 
 #### How the “ternary expression” looks like in Python?
+```py
 a if a < b else b
+```
 
 
 #### How the ternary expression looks like in JavaScript?
+
+```js
 condition ? exprIfTrue : exprIfFalse
+```
 
 
 #### How to import a function from another module in Python?
-In [1]:
+```py
 from myfunctions import plustwo
 
-plustwo(3)
+print(plustwo(3))
 
-Out[1]:
-5
-
+# output: 5
+```
 
 #### How to import a function from another module in JavaScript?
+```js
 export function Course() {
     this.id = '';
     this.name = '';
 };
+
 models/student.js
 
 import { Course } from './course.js';
@@ -345,7 +365,7 @@ export function Student() {
     this.course = new Course();
 };
 
-
+```
 ### Functional
 #### What is recursion?
 Recursion
@@ -353,6 +373,7 @@ We can make a function call itself. This is known as recursion.
 A common example is a function which calculates numbers in the Fibonacci sequence: the zeroth number is 0,
 the first number is 1, and each subsequent number is the sum of the previous two numbers:
 
+```py
 def fibonacci(n):
     if n == 0:
         return 0
@@ -361,6 +382,8 @@ def fibonacci(n):
         return 1
 
     return fibonacci(n - 1) + fibonacci(n - 2)
+
+```
 Whenever we write a recursive function, we need to include some kind of condition which will allow it to stop recursing
 – an end case in which the function doesn’t call itself. 
 In this example, that happens at the beginning of the sequence: the first two numbers are 
@@ -368,6 +391,9 @@ not calculated from any previous numbers – they are constants.
 
 
 #### Write a recursive function which calculates the Fibonacci numbers!
+
+```py
+
 const number = parseInt(prompt('Enter the number of terms: '));
 let n1 = 0, n2 = 1, nextTerm;
 
@@ -380,8 +406,11 @@ for (let i = 1; i <= number; i++) {
     n2 = nextTerm;
 }
 
+```
 
 #### How to store a function in a variable in Python?
+
+```py
 def myfunction():
     value = "myvalue"
     return value
@@ -389,22 +418,25 @@ def myfunction():
 var = myfunction()
 print(var)
 
->>> "myvalue"
-
+# output: "myvalue"
+```
 
 #### List the ways of defining a callable logical unit in JavaScript!
-list, call
+- list
+- call
 
 
 #### What is an event listener? How to attach one?
+```js
 element.addEventListener(event, function, useCapture);
+```
 
 The addEventListener() method attaches an event handler to the specified element.
 
-The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
-The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.)
-The second parameter is the function we want to call when the event occurs.
-The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
+- The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+1. The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.)
+2. The second parameter is the function we want to call when the event occurs.
+3. The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
 
 
 #### How to trigger an event in JavaScript?
@@ -418,16 +450,21 @@ el.focus();
 el.blur();
 Code language: CSS (css)
 The form element has the submit() and reset() methods for triggering the submit and reset events:
-
 const frm = document.querySelector('form');
+
+```js
 // trigger the submit event
 frm.submit();
+```
 
+```js
 // trigger the reset event
 frm.reset();
+```
 Code language: JavaScript (javascript)
 To trigger other events such as the mousedown or change, you use the following triggerEvent() helper function:
 
+```js
 function triggerEvent(el, type) {
     // IE9+ and other modern browsers
     if ('createEvent' in document) {
@@ -441,6 +478,7 @@ function triggerEvent(el, type) {
         el.fireEvent('on' + e.eventType, e);
     }
 }
+```
 Code language: JavaScript (javascript)
 Suppose that you have an input text:
 
@@ -459,17 +497,18 @@ triggerEvent(input, 'change');
 
 
 #### What is a callback function? Tell some examples of its usage.
-In computer programming, a callback function, is any executable code that is passed as an argument
+- In computer programming, a callback function, is any executable code that is passed as an argument
 to other code that is expected to call back (execute) the argument at a given time.
 
-This execution may be immediate as in a synchronous callback, or it might happen at a
+- This execution may be immediate as in a synchronous callback, or it might happen at a
 later time as in an asynchronous callback.
 
-A JavaScript Callback is a function passed as an argument to another function.
+- A JavaScript Callback is a function passed as an argument to another function.
 
-In the above example, we passed in as an argument the numbers 100 and the 200.
+- In the above example, we passed in as an argument the numbers 100 and the 200.
 
-If we instead passed in a function, that function we pass in would be called a callback.
+- If we instead passed in a function, that function we pass in would be called a callback.
+```js
 
 function addTwoNumberFunctions(functionOne, functionTwo) {
     var functionAdditionResult = functionOne() + functionTwo();
@@ -481,10 +520,10 @@ function functionOneHundred() { return 100; }
 function functionTwoHundred() { return 200; }
 
 addTwoNumberFunctions(functionOneHundred, functionTwoHundred);
-In this example, the two functions we are passing in (functionOneHundred and functionTwoHundred) are both Callback Functions in JavaScript.
 
-(setTimeout pl ilyen fv.)
+```
 
+- In this example, the two functions we are passing in (functionOneHundred and functionTwoHundred) are both Callback Functions in JavaScript.
 
 #### What is a Python decorator? How does it work? Tell some examples of its usage.
 They “decorate” or “wrap” another function and let you execute 
@@ -530,7 +569,7 @@ https://www.koyeb.com/blog/introduction-to-synchronous-and-asynchronous-processi
 Technical Examples
 We have selected 4 common examples of when synchronous and asynchronous processing are used in applications.
 
-Synchronous Processing
+- Synchronous Processing
 User Interfaces: User interface (UI) designs are typically synchronous. 
 Since UIs are spaces where humans and computers interact, it is ideal for 
 them to replicate the communication standards and practices humans are familiar
@@ -538,12 +577,12 @@ with. Humans expect an immediate response when they interact with a computer!
 HTTP APIs: HTTP APIs pass requests and responses in a synchronous fashion.
 Client programs sending HTTP requests usually expect a fast answer from the web server.
 
-Asynchronous Processing
+- Asynchronous Processing
 Batch-processing: is a data-processing method to handle large amounts of data 
 asynchronously. With asynchronous batch-processing, large batches of data are 
 processed at scheduled times to avoid blocking computing resources.
 
-Long-running tasks: such as fulfilling an order placed on an e-commerce site are
+- Long-running tasks: such as fulfilling an order placed on an e-commerce site are
 best handled asynchronously. There is no need to block resources while this task is executed.
 
 
@@ -1272,3 +1311,6 @@ requirements are documented and approved prior to the beginning of development,
 there is a commitment to deliver a specific set of features which makes the final product more predictable
 module_web_with_python.md
 module_web_with_python.md megjelenítése.
+
+
+
